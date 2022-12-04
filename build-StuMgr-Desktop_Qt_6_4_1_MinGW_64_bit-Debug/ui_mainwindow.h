@@ -11,8 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -36,12 +38,19 @@ public:
     QSpacerItem *horizontalSpacer_2;
     QSpacerItem *verticalSpacer_2;
     QVBoxLayout *verticalLayout_2;
-    QHBoxLayout *horizontalLayout_2;
-    QSpacerItem *horizontalSpacer_5;
-    QPushButton *inquire;
+    QSpacerItem *verticalSpacer_5;
+    QHBoxLayout *horizontalLayout_3;
+    QSpacerItem *horizontalSpacer_4;
+    QLabel *label_2;
+    QComboBox *cb_user;
+    QSpacerItem *horizontalSpacer_3;
+    QLabel *label_3;
+    QLineEdit *le_passwd;
     QSpacerItem *horizontalSpacer_6;
     QSpacerItem *verticalSpacer_3;
-    QHBoxLayout *horizontalLayout_3;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer_5;
+    QPushButton *login;
     QSpacerItem *horizontalSpacer_7;
     QPushButton *exit;
     QSpacerItem *horizontalSpacer_8;
@@ -95,7 +104,7 @@ public:
 
         verticalLayout->addItem(verticalSpacer_2);
 
-        verticalLayout->setStretch(0, 2);
+        verticalLayout->setStretch(0, 5);
         verticalLayout->setStretch(1, 3);
         verticalLayout->setStretch(2, 5);
 
@@ -103,65 +112,97 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer_5);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_4);
+
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName("label_2");
+        QFont font1;
+        font1.setPointSize(14);
+        label_2->setFont(font1);
+
+        horizontalLayout_3->addWidget(label_2);
+
+        cb_user = new QComboBox(centralwidget);
+        cb_user->addItem(QString());
+        cb_user->addItem(QString());
+        cb_user->setObjectName("cb_user");
+        QFont font2;
+        font2.setPointSize(12);
+        cb_user->setFont(font2);
+
+        horizontalLayout_3->addWidget(cb_user);
+
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_3);
+
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName("label_3");
+        label_3->setFont(font1);
+
+        horizontalLayout_3->addWidget(label_3);
+
+        le_passwd = new QLineEdit(centralwidget);
+        le_passwd->setObjectName("le_passwd");
+        le_passwd->setFont(font2);
+        le_passwd->setEchoMode(QLineEdit::Password);
+
+        horizontalLayout_3->addWidget(le_passwd);
+
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_6);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_3);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer_3);
+
+
+        verticalLayout_3->addLayout(verticalLayout_2);
+
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_2->addItem(horizontalSpacer_5);
 
-        inquire = new QPushButton(centralwidget);
-        inquire->setObjectName("inquire");
-        QFont font1;
-        font1.setPointSize(12);
-        inquire->setFont(font1);
+        login = new QPushButton(centralwidget);
+        login->setObjectName("login");
+        login->setFont(font2);
 
-        horizontalLayout_2->addWidget(inquire);
+        horizontalLayout_2->addWidget(login);
 
-        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer_6);
-
-        horizontalLayout_2->setStretch(0, 6);
-        horizontalLayout_2->setStretch(1, 3);
-        horizontalLayout_2->setStretch(2, 6);
-
-        verticalLayout_2->addLayout(horizontalLayout_2);
-
-        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_2->addItem(verticalSpacer_3);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName("horizontalLayout_3");
         horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        horizontalLayout_3->addItem(horizontalSpacer_7);
+        horizontalLayout_2->addItem(horizontalSpacer_7);
 
         exit = new QPushButton(centralwidget);
         exit->setObjectName("exit");
-        exit->setFont(font1);
+        exit->setFont(font2);
 
-        horizontalLayout_3->addWidget(exit);
+        horizontalLayout_2->addWidget(exit);
 
         horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        horizontalLayout_3->addItem(horizontalSpacer_8);
+        horizontalLayout_2->addItem(horizontalSpacer_8);
 
-        horizontalLayout_3->setStretch(0, 6);
-        horizontalLayout_3->setStretch(1, 3);
-        horizontalLayout_3->setStretch(2, 6);
 
-        verticalLayout_2->addLayout(horizontalLayout_3);
+        verticalLayout_3->addLayout(horizontalLayout_2);
 
-        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_4 = new QSpacerItem(20, 105, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        verticalLayout_2->addItem(verticalSpacer_4);
-
-        verticalLayout_2->setStretch(0, 3);
-        verticalLayout_2->setStretch(1, 1);
-        verticalLayout_2->setStretch(3, 3);
-
-        verticalLayout_3->addLayout(verticalLayout_2);
+        verticalLayout_3->addItem(verticalSpacer_4);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -181,7 +222,13 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\345\255\246\347\224\237\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\345\255\246\347\224\237\351\200\211\350\257\276\344\277\241\346\201\257\347\256\241\347\220\206", nullptr));
-        inquire->setText(QCoreApplication::translate("MainWindow", "\346\237\245\350\257\242", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "\347\224\250\346\210\267\357\274\232", nullptr));
+        cb_user->setItemText(0, QCoreApplication::translate("MainWindow", "root", nullptr));
+        cb_user->setItemText(1, QCoreApplication::translate("MainWindow", "common user", nullptr));
+
+        label_3->setText(QCoreApplication::translate("MainWindow", "\345\257\206\347\240\201\357\274\232", nullptr));
+        le_passwd->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\345\257\206\347\240\201", nullptr));
+        login->setText(QCoreApplication::translate("MainWindow", "\347\231\273\345\275\225", nullptr));
         exit->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
     } // retranslateUi
 

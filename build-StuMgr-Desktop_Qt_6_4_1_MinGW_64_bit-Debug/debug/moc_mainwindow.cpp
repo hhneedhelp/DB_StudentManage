@@ -30,7 +30,7 @@ struct qt_meta_stringdata_MainWindow_t {
     char stringdata0[11];
     char stringdata1[16];
     char stringdata2[1];
-    char stringdata3[19];
+    char stringdata3[17];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
@@ -39,12 +39,12 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
         QT_MOC_LITERAL(11, 15),  // "on_exit_clicked"
         QT_MOC_LITERAL(27, 0),  // ""
-        QT_MOC_LITERAL(28, 18)   // "on_inquire_clicked"
+        QT_MOC_LITERAL(28, 16)   // "on_login_clicked"
     },
     "MainWindow",
     "on_exit_clicked",
     "",
-    "on_inquire_clicked"
+    "on_login_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -84,7 +84,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
         // method 'on_exit_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_inquire_clicked'
+        // method 'on_login_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -97,7 +97,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         (void)_t;
         switch (_id) {
         case 0: _t->on_exit_clicked(); break;
-        case 1: _t->on_inquire_clicked(); break;
+        case 1: _t->on_login_clicked(); break;
         default: ;
         }
     }

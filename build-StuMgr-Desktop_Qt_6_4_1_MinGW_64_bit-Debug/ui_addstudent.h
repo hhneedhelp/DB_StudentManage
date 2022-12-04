@@ -32,11 +32,6 @@ public:
     QLabel *label_2;
     QLineEdit *le_SName;
     QSpacerItem *horizontalSpacer_2;
-    QHBoxLayout *horizontalLayout_6;
-    QSpacerItem *horizontalSpacer_11;
-    QLabel *label_6;
-    QLineEdit *le_SClass;
-    QSpacerItem *horizontalSpacer_12;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer_8;
     QLabel *label_3;
@@ -110,32 +105,6 @@ public:
         horizontalLayout->setStretch(3, 3);
 
         verticalLayout->addLayout(horizontalLayout);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName("horizontalLayout_6");
-        horizontalSpacer_11 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_11);
-
-        label_6 = new QLabel(addStudent);
-        label_6->setObjectName("label_6");
-        label_6->setFont(font1);
-
-        horizontalLayout_6->addWidget(label_6);
-
-        le_SClass = new QLineEdit(addStudent);
-        le_SClass->setObjectName("le_SClass");
-
-        horizontalLayout_6->addWidget(le_SClass);
-
-        horizontalSpacer_12 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_12);
-
-        horizontalLayout_6->setStretch(2, 5);
-        horizontalLayout_6->setStretch(3, 3);
-
-        verticalLayout->addLayout(horizontalLayout_6);
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
@@ -257,13 +226,6 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_5);
 
-        verticalLayout->setStretch(0, 3);
-        verticalLayout->setStretch(1, 1);
-        verticalLayout->setStretch(2, 1);
-        verticalLayout->setStretch(3, 1);
-        verticalLayout->setStretch(4, 1);
-        verticalLayout->setStretch(5, 1);
-        verticalLayout->setStretch(6, 2);
 
         retranslateUi(addStudent);
 
@@ -276,8 +238,6 @@ public:
         label->setText(QCoreApplication::translate("addStudent", "\346\267\273\345\212\240\345\255\246\347\224\237", nullptr));
         label_2->setText(QCoreApplication::translate("addStudent", "\345\247\223\345\220\215\357\274\232", nullptr));
         le_SName->setPlaceholderText(QCoreApplication::translate("addStudent", "\350\257\267\350\276\223\345\205\245\345\255\246\347\224\237\345\247\223\345\220\215", nullptr));
-        label_6->setText(QCoreApplication::translate("addStudent", "\347\217\255\347\272\247\357\274\232", nullptr));
-        le_SClass->setPlaceholderText(QCoreApplication::translate("addStudent", "\350\257\267\350\276\223\345\205\245\345\255\246\347\224\237\347\217\255\347\272\247", nullptr));
         label_3->setText(QCoreApplication::translate("addStudent", "\345\255\246\345\217\267\357\274\232", nullptr));
         le_SNo->setPlaceholderText(QCoreApplication::translate("addStudent", "\350\257\267\350\276\223\345\205\245\345\255\246\347\224\237\345\255\246\345\217\267", nullptr));
         label_4->setText(QCoreApplication::translate("addStudent", "\346\200\247\345\210\253\357\274\232", nullptr));

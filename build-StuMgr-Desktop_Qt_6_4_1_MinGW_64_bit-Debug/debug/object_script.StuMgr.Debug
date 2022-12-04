@@ -1,0 +1,14 @@
+debug/addcourse.o
+debug/addsc.o
+debug/addteacher.o
+debug/dbmodel.o
+debug/main.o
+debug/addstudent.o
+debug/mainwindow.o
+debug/secondwindow.o
+debug/moc_addcourse.o
+debug/moc_addsc.o
+debug/moc_addstudent.o
+debug/moc_addteacher.o
+debug/moc_mainwindow.o
+debug/moc_secondwindow.o

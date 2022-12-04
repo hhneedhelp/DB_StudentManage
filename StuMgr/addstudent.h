@@ -14,9 +14,15 @@ class addStudent : public QDialog
 public:
     addStudent(QWidget *parent = nullptr);
     ~addStudent();
+    static addStudent &getInstance(){
+        static addStudent _instance;
+        return _instance;
+    };
 
 private slots:
     void on_btn_confirm_clicked();
+
+    void on_btn_cancel_clicked();
 
 private:
     Ui::addStudent *ui;

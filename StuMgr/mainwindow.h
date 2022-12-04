@@ -19,7 +19,7 @@ public:
 private slots:
     void on_exit_clicked();
 
-    void on_inquire_clicked();
+    void on_login_clicked();
 
 private:
     Ui::MainWindow *ui;

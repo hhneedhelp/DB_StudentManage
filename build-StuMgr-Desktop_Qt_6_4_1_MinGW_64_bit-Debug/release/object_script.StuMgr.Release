@@ -1,0 +1,14 @@
+release/addcourse.o
+release/addsc.o
+release/addteacher.o
+release/dbmodel.o
+release/main.o
+release/addstudent.o
+release/mainwindow.o
+release/secondwindow.o
+release/moc_addcourse.o
+release/moc_addsc.o
+release/moc_addstudent.o
+release/moc_addteacher.o
+release/moc_mainwindow.o
+release/moc_secondwindow.o
